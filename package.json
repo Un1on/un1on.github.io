@@ -1,25 +1,22 @@
 {
-  "name": "three.js-test",
+  "name": "frontend-portfolio-node",
   "version": "1.0.0",
-  "description": "test task",
-  "main": "main.js",
+  "private": true,
+  "description": "Навчальний сайт-портфоліо з Node.js, Express та SQLite",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js",
+    "check": "node --check server.js && node --check script.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Un1on/Un1on.github.io.git"
+  "engines": {
+    "node": ">=20"
   },
-  "author": "Me",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Un1on/Un1on.github.io/issues"
-  },
-  "homepage": "https://github.com/Un1on/Un1on.github.io#readme",
   "dependencies": {
-    "three": "^0.155.0"
-  },
-  "devDependencies": {
-    "vite": "^4.4.9"
+    "better-sqlite3": "^11.8.1",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-rate-limit": "^7.5.0",
+    "express-session": "^1.18.1",
+    "helmet": "^8.0.0"
   }
 }
